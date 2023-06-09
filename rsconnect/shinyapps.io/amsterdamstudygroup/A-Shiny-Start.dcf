@@ -1,0 +1,13 @@
+name: A-Shiny-Start
+title: A-Shiny-Start
+username:
+account: amsterdamstudygroup
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9276409
+bundleId: 7323859
+url: https://amsterdamstudygroup.shinyapps.io/A-Shiny-Start/
+when: 1686296567.66938
+lastSyncTime: 1686296567.6694
+asMultiple: FALSE
+asStatic: FALSE
