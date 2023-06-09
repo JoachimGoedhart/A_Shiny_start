@@ -448,8 +448,6 @@ Hint
 <li>look for <code>titlePanel()</code></li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -481,8 +479,6 @@ Hint
 <li>Change the values of both sliders</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -503,8 +499,6 @@ Hint
 <li>The first value inside <code>sliderInput()</code> is the ID.</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -526,8 +520,6 @@ Hint
 label.</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -563,8 +555,6 @@ Hint
 <li>look at how bins is defined by the value taken from the slider.</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -590,7 +580,8 @@ effect.</p>
 Solution
 </summary>
 <ul>
-<li><code>numericInput(&quot;transparency&quot;, &quot;Transparency:&quot;, value = 0.7, min = 0, max = 1, step = 0.1)</code></li>
+<li><code>numericInput(“transparency”, “Transparency:”, value = 0.7, min
+= 0, max = 1, step = 0.1)</code></li>
 </ul>
 </details>
 <hr />
@@ -632,18 +623,17 @@ state of the checkbox.</li>
 Hint
 </summary>
 <ul>
-<li>To evaluate the state of the checkbx you can use
-<code>input$ungroup == TRUE</code> inside <code>if()</code></li>
+<li>To evaluate the state of the checkbx you can use <code>input$ungroup
+== TRUE</code> inside <code>if()</code></li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
 </summary>
 <ul>
-<li><code>if (input$ungroup == TRUE) p &lt;- p + facet_wrap(~Species)</code></li>
+<li><code>if (input$ungroup == TRUE) p &lt;- p +
+facet_wrap(~Species)</code></li>
 </ul>
 </details>
 <hr />
@@ -662,8 +652,6 @@ Hint
 title of a plot</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -739,8 +727,6 @@ Hint
 <li>use the function <code>summary()</code> on the iris dataset.</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -794,8 +780,6 @@ Hint
 <li>the status is stored in <code>input$ungroup</code></li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -818,8 +802,6 @@ Hint
 <code>print()</code> function</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
@@ -858,14 +840,13 @@ Hint
 evalution’</li>
 </ul>
 </details>
-<br />
-
 <details>
 <summary>
 Solution
 </summary>
 <ul>
-<li><code>iris %&gt;% group_by(Species) %&gt;% summarise(n=n(), mean = mean(.data[[input$var]]))</code></li>
+<li><code>iris %&gt;% group_by(Species) %&gt;% summarise(n=n(), mean =
+mean(.data[[input$var]]))</code></li>
 </ul>
 </details>
 <hr />
@@ -890,6 +871,10 @@ Solution
 <h2>Conclusion</h2>
 <p>This concludes the tutorial and you should have a fully working app
 that looks like this: <a href="https://amsterdamstudygroup.shinyapps.io/A_Shiny_start/">https://amsterdamstudygroup.shinyapps.io/A_Shiny_start/</a></p>
+<p>You can compare your own code with the code that I wrote. You can
+find my code in the app.R file that is part of this repository. See also
+<a href="https://raw.githubusercontent.com/JoachimGoedhart/A_Shiny_start/main/app.R">this
+link</a>.</p>
 <p>I hope that you had fun and learned how a Shiny app can be developed.
 If you want to use a Shiny app to share or display your own data, read
 on for some tips on how to do that.</p>
@@ -920,6 +905,14 @@ the User Interface. Finally, the controls can be connected to the
 variables in the code. Check frequently whether the app runs, because
 debugging can be complicated and becomes more difficult with every line
 of code that you add.</p>
+</div>
+<div id="post-post-scriptum---dashboard-versus-tool" class="section level2">
+<h2>Post Post Scriptum - Dashboard versus Tool</h2>
+<p>When the data is included in the app, the result is much like a data
+dashboard. The users can interact with the data, visualize it in
+different ways to explore and understand it. Many of the apps that I
+developed are data visualization tools that allows users to upload their
+own data.</p>
 <hr />
 </div>
 </div>

@@ -423,6 +423,8 @@ df_num <- iris %>% select(where(is.numeric))
 
 This concludes the tutorial and you should have a fully working app that looks like this: [https://amsterdamstudygroup.shinyapps.io/A_Shiny_start/](https://amsterdamstudygroup.shinyapps.io/A_Shiny_start/)
 
+You can compare your own code with the code that I wrote. You can find my code in the app.R file that is part of this repository. See also [this link](https://raw.githubusercontent.com/JoachimGoedhart/A_Shiny_start/main/app.R).
+
 I hope that you had fun and learned how a Shiny app can be developed. If you want to use a Shiny app to share or display your own data, read on for some tips on how to do that.
 
 ## Post Scriptum - Using your own data in an app
@@ -449,6 +451,10 @@ if (input$ungroup) p <- p + facet_wrap(~Condition)
 ```
 
 One approach that I use is to first hard-code the plot, based on the data. After that, I introduce the controls (sliders, input fields) in the User Interface. Finally, the controls can be connected to the variables in the code. Check frequently whether the app runs, because debugging can be complicated and becomes more difficult with every line of code that you add.
+
+## Post Post Scriptum - Dashboard versus Tool
+
+When the data is included in the app, the result is much like a data *dashboard*. The users can interact with the data, visualize it in different ways to explore and understand it. Many of the apps that I developed are a data visualization *tool*. Users can upload their own data and explore it. This adds another layer of complexity, since this type of app needs to handle different types of data and the app needs to be designed with this in mind. Luckily there is code available that should provide some help to get started. You can check out [my Github repository](https://github.com/JoachimGoedhart) for inspiration!
 
 
 
