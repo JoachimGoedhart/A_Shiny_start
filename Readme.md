@@ -64,7 +64,7 @@ ggplot(data = iris, aes(x=Sepal.Width)) + geom_histogram(bins = input$bins)
 <summary>Hint</summary>
 -   look for <code>titlePanel()</code>
 </details>
-\
+
 <details>
 <summary>Solution</summary>
 -   <code>titlePanel("Iris data")</code>
@@ -87,7 +87,7 @@ The `sliderInput()` function generates a slider in the User Interface and can is
 <summary>Hint</summary>
 -   Change the values of both sliders
 </details>
-\
+
 <details>
 <summary>Solution</summary>
 -   Only the input from the upper slider is used by the app.
@@ -101,7 +101,7 @@ The `sliderInput()` function generates a slider in the User Interface and can is
 <summary>Hint</summary>
 -   The first value inside <code>sliderInput()</code> is the ID.
 </details>
-\
+
 <details>
 <summary>Solution</summary>
 -   <code>sliderInput("transparency", ""Number of bins:", min = 0, max = 1, value = 0.7),</code>
@@ -115,7 +115,7 @@ The `sliderInput()` function generates a slider in the User Interface and can is
 <summary>Hint</summary>
 -   The second field inside <code>sliderInput()</code> is the label.
 </details>
-\
+
 <details>
 <summary>Solution</summary>
 -   <code>sliderInput("transparency", "Transparency:", min = 0, max = 1, value = 0.7),</code>
@@ -143,7 +143,7 @@ Now we need to connect the value of the slider to the code that renders the plot
 <summary>Hint</summary>
 -   look at how bins is defined by the value taken from the slider.
 </details>
-\
+
 <details>
 <summary>Solution</summary>
 -   <code>ggplot(data = iris, (x=Sepal.Width)) + geom_histogram(bins = input$bins, alpha=input$transparency)</code>
@@ -164,7 +164,7 @@ Run the code to see whether the new UI element appears and to verify its effect 
 
 <details>
 <summary>Solution</summary>
--   `numericInput("transparency", "Transparency:", value = 0.7, min = 0, max = 1, step = 0.1)`
+-   <code>numericInput("transparency", "Transparency:", value = 0.7, min = 0, max = 1, step = 0.1)</code>
 </details>
 ------------------------------------------------------------------------
 
@@ -200,16 +200,16 @@ p <- p + facet_wrap(~Species)
 
 <details>
 <summary>Hint</summary>
--   `input$ungroup` is "TRUE" or "FALSE", depending on the state of the checkbox.
+-   <code>input$ungroup</code> is "TRUE" or "FALSE", depending on the state of the checkbox.
 </details>
 <details>
 <summary>Hint</summary>
--   To evaluate the state of the checkbx you can use `input$ungroup == TRUE` inside `if()`
+-   To evaluate the state of the checkbx you can use <code>input$ungroup == TRUE</code> inside <code>if()</code>
 </details>
-\
+
 <details>
 <summary>Solution</summary>
--   `if (input$ungroup == TRUE) p <- p + facet_wrap(~Species)`
+-   <code>if (input$ungroup == TRUE) p <- p + facet_wrap(~Species)</code>
 </details>
 
 ------------------------------------------------------------------------
@@ -220,12 +220,12 @@ p <- p + facet_wrap(~Species)
 
 <details>
 <summary>Hint</summary>
--   `p <- p + labs(title = …)` can be used to change the title of a plot
+-   <code>p <- p + labs(title = …)</code> can be used to change the title of a plot
 </details>
-\
+
 <details>
 <summary>Solution</summary>
--   `p <- p + labs(title = input$title)`
+-   <code>p <- p + labs(title = input$title)</code>
 </details>
 
 ------------------------------------------------------------------------
@@ -268,7 +268,7 @@ conditionalPanel(condition = "input.ungroup==true", "The plot shows the data per
 
 <details>
 <summary>Solution</summary>
--   The location matters for the layout of the User Interface, but it does not matter for reactivity. It will react to the state of the checkbox, regardless of its position within `sidebarPanel()`.
+-   The location matters for the layout of the User Interface, but it does not matter for reactivity. It will react to the state of the checkbox, regardless of its position within <code>sidebarPanel()</code>.
 </details>
 
 ## Step 8 - Adding a table to the output
@@ -295,12 +295,12 @@ tableOutput("someTable")
 
 <details>
 <summary>Hint</summary>
--   use the function `summary()` on the iris dataset.
+-   use the function <code>summary()</code> on the iris dataset.
 </details>
-\
+
 <details>
 <summary>Solution</summary>
--   `summary(iris)`
+-   <code>summary(iris)</code>
 </details>
 
 
@@ -346,12 +346,12 @@ When you run the app, the data is printed in the Console window of RStudio. This
 
 <details>
 <summary>Hint</summary>
--   the status is stored in `input$ungroup`
+-   the status is stored in <code>input$ungroup</code>
 </details>
-\
+
 <details>
 <summary>Solution</summary>
--   `observe({print(input$ungroup)})`
+-   <code>observe({print(input$ungroup)})</code>
 -   The console should report on the state of the checkbox when it changes.
 </details>
 
@@ -361,12 +361,12 @@ When you run the app, the data is printed in the Console window of RStudio. This
 
 <details>
 <summary>Hint</summary>
--   You need to use `colnames()` inside the `print()` function
+-   You need to use <code>colnames()</code> inside the <code>print()</code> function
 </details>
-\
+
 <details>
 <summary>Solution</summary>
--   `observe({print(colnames(iris))})`
+-   <code>observe({print(colnames(iris))})</code>
 </details>
 
 ------------------------------------------------------------------------
@@ -396,10 +396,10 @@ Before this works, we need to add session to the server: Replace `server <- func
 <summary>Hint</summary>
 -   Look at the code for the plot. The keyword here is 'tidy evalution'
 </details>
-\
+
 <details>
 <summary>Solution</summary>
--   `iris %>% group_by(Species) %>% summarise(n=n(), mean = mean(.data[[input$var]]))`
+-   <code>iris %>% group_by(Species) %>% summarise(n=n(), mean = mean(.data[[input$var]]))</code>
 </details>
 
 
@@ -415,7 +415,7 @@ df_num <- iris %>% select(where(is.numeric))
 
 <details>
 <summary>Solution</summary>
--   `colNames <- colnames(df_num)`
+-   <code>colNames <- colnames(df_num)</code>
 </details>
 
 
