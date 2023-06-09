@@ -62,12 +62,12 @@ ggplot(data = iris, aes(x=Sepal.Width)) + geom_histogram(bins = input$bins)
 
 <details>
 <summary>Hint</summary>
--   look for `titlePanel()`
+-   look for <code>titlePanel()</code>
 </details>
 \
 <details>
 <summary>Solution</summary>
--   `titlePanel("Iris data")`
+-   <code>titlePanel("Iris data")</code>
 </details>
 
 ------------------------------------------------------------------------
@@ -99,12 +99,12 @@ The `sliderInput()` function generates a slider in the User Interface and can is
 
 <details>
 <summary>Hint</summary>
--   The first value inside `sliderInput()` is the ID.
+-   The first value inside <code>sliderInput()</code> is the ID.
 </details>
 \
 <details>
 <summary>Solution</summary>
--   `sliderInput("transparency", ""Number of bins:", min = 0, max = 1, value = 0.7),`
+-   <code>sliderInput("transparency", ""Number of bins:", min = 0, max = 1, value = 0.7),</code>
 </details>
 
 ------------------------------------------------------------------------
@@ -113,12 +113,12 @@ The `sliderInput()` function generates a slider in the User Interface and can is
 
 <details>
 <summary>Hint</summary>
--   The second field inside `sliderInput()` is the label.
+-   The second field inside <code>sliderInput()</code> is the label.
 </details>
 \
 <details>
 <summary>Solution</summary>
--   `sliderInput("transparency", "Transparency:", min = 0, max = 1, value = 0.7),`
+-   <code>sliderInput("transparency", "Transparency:", min = 0, max = 1, value = 0.7),</code>
 </details>
 
 ------------------------------------------------------------------------
@@ -146,7 +146,7 @@ Now we need to connect the value of the slider to the code that renders the plot
 \
 <details>
 <summary>Solution</summary>
--   `ggplot(data = iris, (x=Sepal.Width)) + geom_histogram(bins = input$bins, alpha=input$transparency)`
+-   <code>ggplot(data = iris, (x=Sepal.Width)) + geom_histogram(bins = input$bins, alpha=input$transparency)</code>
 </details>
 
 ------------------------------------------------------------------------

@@ -455,7 +455,7 @@ Hint
 Solution
 </summary>
 <ul>
-<li><code>titlePanel(&quot;Iris data&quot;)</code></li>
+<li><code>titlePanel(“Iris data”)</code></li>
 </ul>
 </details>
 <hr />
@@ -510,7 +510,8 @@ Hint
 Solution
 </summary>
 <ul>
-<li><code>sliderInput(&quot;transparency&quot;, &quot;&quot;Number of bins:&quot;, min = 0, max = 1, value = 0.7),</code></li>
+<li><code>sliderInput(“transparency”, ““Number of bins:”, min = 0, max =
+1, value = 0.7),</code></li>
 </ul>
 </details>
 <hr />
@@ -532,7 +533,8 @@ label.</li>
 Solution
 </summary>
 <ul>
-<li><code>sliderInput(&quot;transparency&quot;, &quot;Transparency:&quot;, min = 0, max = 1, value = 0.7),</code></li>
+<li><code>sliderInput(“transparency”, “Transparency:”, min = 0, max = 1,
+value = 0.7),</code></li>
 </ul>
 </details>
 <hr />
@@ -568,7 +570,9 @@ Hint
 Solution
 </summary>
 <ul>
-<li><code>ggplot(data = iris, (x=Sepal.Width)) + geom_histogram(bins = input$bins, alpha=input$transparency)</code></li>
+<li><code>ggplot(data = iris, (x=Sepal.Width)) + geom_histogram(bins =
+input<span class="math inline">\(bins,
+alpha=input\)</span>transparency)</code></li>
 </ul>
 </details>
 <hr />
