@@ -45,7 +45,7 @@ library(tidyverse)
 
 <details>
 <summary>Hint</summary>
--   Look for `library(shiny)` somwhere at the top of the code and add it on the line below
+-   Look for <code>library(shiny)</code> somwhere at the top of the code and add it on the line below
 </details>
 
 ------------------------------------------------------------------------
