@@ -28,7 +28,7 @@ Now we can start coding. In RStudio we can create a new Shiny app by selecting f
 ![](How_to_run_app.png)
 
 
-Or you can use `<Control> + <Shift> + <Enter>`. Try it! This should fire up a new window with the app.
+Or you can use `<Control> + <Shift> + <Enter>`. Try it! This should fire up a new window with the first, basic app.
 
 ## Bugs
 
@@ -53,7 +53,7 @@ library(tidyverse)
 -   Look for <code>library(shiny)</code> somwhere at the top of the code and add it on the line below
 </details>
 
-Try to run this code, does it work?
+Try to run this code, does it work? Is this app different from the first version?
 
 ------------------------------------------------------------------------
 
