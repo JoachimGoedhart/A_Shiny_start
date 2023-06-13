@@ -4,7 +4,7 @@ The aim of the tutorial is to demonstrate basic aspects of a Shiny app and how t
 
 Below you find step-by-step instructions that you can follow to add and modify functionality to a Shiny app that is created by default. With each step, the functionality (and hence complexity) of the app increases. Knowledge of R is not required for this tutorial, but is highly recommended when you want to develop your own app.
 
-After completion of steps 1--8 of this tutorial you should have an understanding of the components of a Shiny app, have an idea of how to modify existing Shiny apps and be able to generate a basic Shiny app for interactive display of data. Steps 9-11 are more advanced, and are especially useful when you are interested in using your own data in a Shiny app. Some tips for using your own data in a Shiny app can be found at the very end of this tutorial.
+After completion of steps 1-8 of this tutorial you should have an understanding of the components of a Shiny app, have an idea of how to modify existing Shiny apps and be able to generate a basic Shiny app for interactive display of data. Steps 9-11 are more advanced, and are especially useful when you are interested in using your own data in a Shiny app. Some tips for using your own data in a Shiny app can be found at the very end of this tutorial.
 
 If you have any suggestions or feedback, please reach out!
 
@@ -27,7 +27,7 @@ Now we can start coding. In RStudio we can create a new Shiny app by selecting f
 
 ## Bugs
 
-Anytime that you write code, you will introduce bugs. Finding and solving bugs (debugging) is an integral part of writing code and (often) you learn something from this process. Debugging a Shiny app can be hard, and I have not found the best way of doing this. A bracket or comma that is missing or in the wrong place can break the app. So pay attention and be precise when introducing new lines of code. One piece of advice is to often run the app and see if it runs at all and if so, if it runs as designed. If it does not run check the newly introduce code and any brackets and commas near the new code.
+Anytime that you write code, you will introduce bugs. Finding and solving bugs (debugging) is an integral part of writing code and (often) you learn something from this process. Debugging a Shiny app can be hard, and I have not found the best way of doing this. A bracket or comma that is missing or in the wrong place can break the app. So pay attention and be precise when introducing new lines of code. One piece of advice is to often run the app and see if it runs at all and if so, whether it runs as designed. If it does not run, check the newly introduced code and any brackets and commas near the new code.
 
 ## Step 1 - Use ggplot2 for the output
 
