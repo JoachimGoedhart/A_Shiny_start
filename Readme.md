@@ -31,7 +31,7 @@ Anytime that you write code, you will introduce bugs. Finding and solving bugs (
 
 ## Step 1 - Use ggplot2 for the output
 
-We will first use a more modern and nicer looking way of plotting the same data. Therefore, you should replace existing code that is responsible for the plot within `renderPlot({})` for ggplot code:
+We will first use a more modern and nicer looking way of plotting the same data. Therefore, you should replace existing code that is responsible for the plot within `renderPlot({})` (watch the brackets!) for ggplot code:
 
 ```         
 ggplot(data = faithful, aes(x=waiting)) + geom_histogram(bins = input$bins)
@@ -47,6 +47,8 @@ library(tidyverse)
 <summary>Hint</summary>
 -   Look for <code>library(shiny)</code> somwhere at the top of the code and add it on the line below
 </details>
+
+Try to run this code, does it work?
 
 ------------------------------------------------------------------------
 
