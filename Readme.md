@@ -23,7 +23,7 @@ if (!require(tidyverse)) {
 
 ------------------------------------------------------------------------
 
-Now we can start coding. In RStudio we can create a new Shiny app by selecting from the menu bar: File \> New File \> Shiny Web App... Conveniently, this generates a file with code for a very basic app that you can run without any modifications. To launch the app you can either hit the play icon or use `<Control> + <Shift> + <Enter>` This should fire up a new window with the app.
+Now we can start coding. In RStudio we can create a new Shiny app by selecting from the menu bar: File \> New File \> Shiny Web App... Conveniently, this generates a file with code for a very basic app that you can run without any modifications. To launch the app you can either hit the play icon or use `<Control> + <Shift> + <Enter>`. Try it! This should fire up a new window with the app.
 
 ## Bugs
 
