@@ -81,7 +81,9 @@ ggplot(data = iris, aes(x=Sepal.Width)) + geom_histogram(bins = input$bins)
 
 ## Step 3 - Add a UI element to control transparency
 
-The `sliderInput()` function generates a slider in the User Interface and can is used for user input. Add another slider by copy-pasting the `sliderInput()` code (also all text and values in the brackets). Note: within the `sidebarPanel()` items (i.e. user interface elements) are separated with a comma. The last item is NOT followed by a comma. So when you add another slider by using another `sliderInput()` function, this needs to be separated by a comma:
+The `sliderInput()` function generates a slider in the User Interface and can is used for user input. Add another slider by copy-pasting the `sliderInput()` code (also all text and values in the brackets).
+
+**Note**: within the `sidebarPanel()` items (i.e. user interface elements) are separated with a comma and the last item is NOT followed by a comma. So when you add another slider by using another `sliderInput()` function, this needs to be separated by a comma:
 
 ```         
     sliderInput(...),
@@ -111,7 +113,7 @@ The `sliderInput()` function generates a slider in the User Interface and can is
 
 <details>
 <summary>Solution</summary>
--   <code>sliderInput("transparency", ""Number of bins:", min = 0, max = 1, value = 0.7),</code>
+-   <code>sliderInput("transparency", "Number of bins:", min = 0, max = 1, value = 0.7),</code>
 </details>
 
 ------------------------------------------------------------------------
